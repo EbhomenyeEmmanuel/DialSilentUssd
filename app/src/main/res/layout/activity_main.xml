@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ADCBE3"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editTextCodeInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:hint="@string/editextHint"
+            android:inputType="text"
+            android:textAlignment="center" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            >
+
+                <TextView
+                    android:id="@+id/Sim1TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/sim1"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="32sp"
+                    android:layout_margin="30dp"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    />
+
+                <TextView
+                    android:id="@+id/Sim2TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/sim1"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="32sp"
+                    android:layout_margin="30dp"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+            <RadioButton
+                            android:id="@+id/radioBtnSim1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="30dp"
+                            android:layout_gravity="start"
+                            android:layout_marginTop="10dp"
+                            android:checked="true"
+                            android:layout_column="0"
+                            android:layout_row="1"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/radioBtnSim2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_column="1"
+                            android:layout_row="1"
+                            />
+        </GridLayout>
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#6497B1"
+            android:text="@string/buttonText"
+            android:textColor="#ADCBE3" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

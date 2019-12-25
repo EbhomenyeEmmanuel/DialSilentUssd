@@ -1,0 +1,8 @@
+
+<resources>
+    <string name="app_name">DialSilentUssd</string>
+    <string name="editextHint">Enter Text</string>
+    <string name="sim1"></string>
+    <string name="sim2"></string>
+    <string name="buttonText">Create</string>
+</resources>
